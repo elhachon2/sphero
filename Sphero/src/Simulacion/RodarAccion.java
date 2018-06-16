@@ -36,19 +36,7 @@ public class RodarAccion extends Accion {
         return "right";
     }
 
-    public int direccionToInteger(String dir) {
-        // TODO: pasar a un case
-        if (dir == "right") {
-            return 0;
-        } else if (dir == "down") {
-            return 1;
-        } else if (dir == "left") {
-            return 2;
-        } else if (dir == "up") {
-            return 3;
-        }
-        return 0;
-    }
+
 
     public int sumarSinPasarme(int valor, int suma) {
         int temp = valor;
@@ -75,10 +63,12 @@ public class RodarAccion extends Accion {
             direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 3));
         }
         for (int i = 0; i <= distancia() - 1; i++) {
-            if (!c.ejecutarAccion(new Movimiento(direccion))) {
+            Movimiento temp = new Movimiento(direccion);
+            if (!temp.ejecutar(c)) {
                 return false;
             }
-            c.getP().setDireccion(direccionToInteger(direccion));
+            setChanged();
+            notifyObservers();
         }
         return true;
     }

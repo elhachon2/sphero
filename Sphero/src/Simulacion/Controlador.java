@@ -3,10 +3,12 @@ package Simulacion;
 public class Controlador {
     private Tablero t;
     private Pelota p;
+    private Display d;
 
-    public Controlador(Tablero t, Pelota p) {
+    public Controlador(Tablero t, Pelota p, Display d) {
         this.t = t;
         this.p = p;
+        this.d = d;
     }
 
 
@@ -32,6 +34,7 @@ public class Controlador {
     }
 
     public boolean ejecutarAccion(Accion a) {
+        a.addObserver(d);
         return a.ejecutar(this);
     }
 }

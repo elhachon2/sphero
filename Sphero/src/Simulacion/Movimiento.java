@@ -1,11 +1,27 @@
 package Simulacion;
 
+import java.util.Observer;
+
 public class Movimiento extends Accion {
     private String direccion;
 
 
     public Movimiento(String d) {
         direccion = d;
+    }
+
+    public int direccionToInteger(String dir) {
+        // TODO: pasar a un case
+        if (dir == "right") {
+            return 0;
+        } else if (dir == "down") {
+            return 1;
+        } else if (dir == "left") {
+            return 2;
+        } else if (dir == "up") {
+            return 3;
+        }
+        return 0;
     }
 
     public boolean ejecutarMovimiento(int x, int y, int destinox, int destinoy, Controlador c) {
@@ -34,7 +50,13 @@ public class Movimiento extends Accion {
             destinox = x + 1;
             destinoy = y;
         }
-        return (ejecutarMovimiento(x, y, destinox, destinoy, c));
+        if (ejecutarMovimiento(x, y, destinox, destinoy, c)) {
+            c.getP().setDireccion(direccionToInteger(direccion));
+            setChanged();
+            notifyObservers();
+            return true;
+        }
+        return false;
 
     }
 

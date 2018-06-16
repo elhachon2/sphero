@@ -25,16 +25,7 @@ public class Tablero {
         return matriz[x][y];
     }
 
-    public void mostrarTablero() {
-        String linea = "";
-        for (int i = 0; i <= 9; i++) {
-            linea = "";
-            for (int j = 0; j <= 9; j++) {
-                linea = linea + matriz[i][j].dibujar();
-            }
-            System.out.println(linea);
-        }
+    public Pieza[][] getMatriz() {
+        return matriz;
     }
-
-
 }

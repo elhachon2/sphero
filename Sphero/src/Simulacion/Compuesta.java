@@ -1,5 +1,6 @@
 package Simulacion;
 
+import java.util.Observer;
 import java.util.Vector;
 
 public class Compuesta extends Accion {
@@ -11,6 +12,13 @@ public class Compuesta extends Accion {
 
     public void agregarAccion(Accion a) {
         acciones.add(a);
+    }
+
+    @Override
+    public synchronized void addObserver(Observer o) {
+        for (Accion a: acciones){
+            a.addObserver(o);
+        }
     }
 
     @Override
