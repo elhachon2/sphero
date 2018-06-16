@@ -4,10 +4,20 @@ public class Pelota extends Pieza {
     // esto es para evitar que tablero tenga que recorrer todas las posiciones de la matriz para buscarme cuando me voy a mover
     private Coordenada posicion;
     private char representacion;
+    private String direccion;
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
 
     public Pelota() {
         Coordenada posicion = new Coordenada(0, 0);
         representacion = 'p';
+        direccion = "up";
     }
 
     public boolean setRepresentacion(char c) {

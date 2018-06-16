@@ -18,5 +18,17 @@ public class Jugar {
         t.mostrarTablero();
         c.ejecutarAccion(new Luz('z'));
         t.mostrarTablero();
+
+        Tablero t1 = new Tablero();
+        Pelota p1 = new Pelota();
+        Controlador c1 = new Controlador(t1, p1);
+        c1.posicionarPelota(1, 1);
+        t1.mostrarTablero();
+        Compuesta comp = new Compuesta();
+        comp.agregarAccion(new Luz('m'));
+        comp.agregarAccion(new Movimiento("down"));
+        comp.agregarAccion(new Movimiento("right"));
+        comp.ejecutar(c1);
+        t1.mostrarTablero();
     }
 }
