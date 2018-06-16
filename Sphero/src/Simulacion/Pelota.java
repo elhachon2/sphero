@@ -2,22 +2,27 @@ package Simulacion;
 
 public class Pelota extends Pieza {
     // esto es para evitar que tablero tenga que recorrer todas las posiciones de la matriz para buscarme cuando me voy a mover
+    static final int right=0;
+    static final int down=1;
+    static final int left=2;
+    static final int up=3;
+
     private Coordenada posicion;
     private char representacion;
-    private String direccion;
+    private int direccion;
 
-    public String getDireccion() {
+    public int getDireccion() {
         return direccion;
     }
 
-    public void setDireccion(String direccion) {
+    public void setDireccion(int direccion) {
         this.direccion = direccion;
     }
 
     public Pelota() {
         Coordenada posicion = new Coordenada(0, 0);
         representacion = 'p';
-        direccion = "up";
+        direccion = right;
     }
 
     public boolean setRepresentacion(char c) {

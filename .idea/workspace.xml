@@ -18,23 +18,11 @@
       <file leaf-file-name="Sphero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sphero/src/Sphero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
               <folding>
                 <element signature="e#65#66#0" expanded="true" />
                 <element signature="e#116#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rodar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sphero/src/SpheroApp/Rodar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,14 +53,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Luz.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Luz.java">
+      <file leaf-file-name="Compuesta.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Compuesta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="317">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
               <folding>
-                <element signature="e#101#102#0" expanded="true" />
-                <element signature="e#124#125#0" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +71,8 @@
       <file leaf-file-name="Pelota.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Pelota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="154">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#285#286#0" expanded="true" />
                 <element signature="e#317#318#0" expanded="true" />
@@ -99,26 +89,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compuesta.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Compuesta.java">
+      <file leaf-file-name="RodarAccion.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/RodarAccion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jugar.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Accion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Accion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jugar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Jugar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="244">
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -131,6 +128,18 @@
               <folding>
                 <element signature="e#598#599#0" expanded="true" />
                 <element signature="e#637#638#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rodar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sphero/src/SpheroApp/Rodar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,12 +179,13 @@
         <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Pieza.java" />
         <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Tablero.java" />
         <option value="$PROJECT_DIR$/Sphero/src/SpheroApp/JugarApp.java" />
-        <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Jugar.java" />
-        <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Pelota.java" />
         <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Rodar.java" />
         <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Compuesta.java" />
         <option value="$PROJECT_DIR$/Sphero/src/Simulacion/AccionRodar.java" />
         <option value="$PROJECT_DIR$/Sphero/src/SpheroApp/Rodar.java" />
+        <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Jugar.java" />
+        <option value="$PROJECT_DIR$/Sphero/src/Simulacion/Pelota.java" />
+        <option value="$PROJECT_DIR$/Sphero/src/Simulacion/RodarAccion.java" />
       </list>
     </option>
   </component>
@@ -252,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JugarApp">
+  <component name="RunManager" selected="Application.Jugar">
     <configuration name="Jugar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Simulacion.Jugar" />
       <module name="Sphero" />
@@ -328,8 +338,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JugarApp" />
         <item itemvalue="Application.Jugar" />
+        <item itemvalue="Application.JugarApp" />
       </list>
     </recent_temporary>
   </component>
@@ -367,12 +377,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33442265" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39542484" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1949891" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1949891" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120469086" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120469086" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -475,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Accion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Pieza.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -518,17 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Controlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Luz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -536,27 +528,6 @@
           <folding>
             <element signature="e#101#102#0" expanded="true" />
             <element signature="e#124#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sphero/src/Sphero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#65#66#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sphero/src/SpheroApp/JugarApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,10 +550,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sphero/src/SpheroApp/JugarApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sphero/src/Sphero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#65#66#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Controlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Compuesta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="317">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="e#148#149#0" expanded="true" />
             <element signature="e#200#201#0" expanded="true" />
@@ -592,10 +595,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Accion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sphero/src/SpheroApp/Rodar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="198">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -604,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Pelota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="154">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#317#318#0" expanded="true" />
@@ -623,8 +633,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/Jugar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="244">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sphero/src/Simulacion/RodarAccion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

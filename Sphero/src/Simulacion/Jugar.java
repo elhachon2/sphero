@@ -24,11 +24,18 @@ public class Jugar {
         Controlador c1 = new Controlador(t1, p1);
         c1.posicionarPelota(1, 1);
         t1.mostrarTablero();
+
         Compuesta comp = new Compuesta();
         comp.agregarAccion(new Luz('m'));
         comp.agregarAccion(new Movimiento("down"));
-        comp.agregarAccion(new Movimiento("right"));
+        comp.agregarAccion(new RodarAccion(90,10,2));
         comp.ejecutar(c1);
         t1.mostrarTablero();
+
+
+
+
+
+
     }
 }
