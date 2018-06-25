@@ -2,6 +2,9 @@ package Simulacion;
 
 import java.util.Observer;
 
+//En el metodo principal no llamar a movimiento simple porque no tiene los datos para actualizar la orientacion. Utilizar
+//la accion rodar para mover la pelota.
+
 public class Movimiento extends Accion {
     private String direccion;
 

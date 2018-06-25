@@ -37,7 +37,6 @@ public class RodarAccion extends Accion {
     }
 
 
-
     public int sumarSinPasarme(int valor, int suma) {
         int temp = valor;
         temp = temp + suma;
@@ -52,6 +51,7 @@ public class RodarAccion extends Accion {
     @Override
     public boolean ejecutar(Controlador c) {
         String direccion = direccionToString(c.getP().getDireccion());
+        c.getP().setSensor("Orientacion", angulo);
 
         if (angulo == 0) {
             direccion = direccionToString(c.getP().getDireccion());

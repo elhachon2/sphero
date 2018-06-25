@@ -3,12 +3,12 @@ package SpheroApp;
 import Simulacion.Accion;
 import Simulacion.RodarAccion;
 
-public class Rodar {
+public class RodarApp extends AccionApp {
     private int angulo;
     private int rapidez;
     private int duracion;
 
-    public Rodar(int ang, int rap, int dur) {
+    public RodarApp(int ang, int rap, int dur) {
         this.angulo = ang;
         this.rapidez = rap;
         this.duracion = dur;
@@ -16,5 +16,9 @@ public class Rodar {
 
     public Accion convertirEnAcciones() {
         return new RodarAccion(angulo, rapidez, duracion);
+    }
+
+    public String toSpheroApp() {
+        return "await roll(" + angulo + "," + rapidez + "," + duracion + ");";
     }
 }

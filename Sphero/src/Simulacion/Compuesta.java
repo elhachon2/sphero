@@ -16,7 +16,7 @@ public class Compuesta extends Accion {
 
     @Override
     public synchronized void addObserver(Observer o) {
-        for (Accion a: acciones){
+        for (Accion a : acciones) {
             a.addObserver(o);
         }
     }

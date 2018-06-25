@@ -11,17 +11,10 @@ public class Jugar {
 
         d.mostrarTablero();
 
-        c.ejecutarAccion(new Movimiento("right"));
-        c.ejecutarAccion(new Movimiento("right"));
-        c.ejecutarAccion(new Movimiento("right"));
-        c.ejecutarAccion(new Movimiento("right"));
-        c.ejecutarAccion(new Movimiento("right"));
-
         Compuesta comp = new Compuesta();
-        comp.agregarAccion(new Luz('m'));
-        comp.agregarAccion(new Movimiento("down"));
+        comp.agregarAccion(new Luz(255, 0, 0));
         comp.agregarAccion(new RodarAccion(90, 10, 2));
+        comp.agregarAccion(new Condicional(new CompararPorDistinto("Orientacion", 80), new Luz(0, 255, 0)));
         c.ejecutarAccion(comp);
-
     }
 }
