@@ -17,23 +17,19 @@ public class RodarAccion extends Accion {
     }
 
     public String direccionToString(int dir) {
-        // TODO: pasar a un case
-        if (dir == 0) {
-            return "right";
-        } else {
-            if (dir == 1) {
+        switch (dir) {
+            case 0:
+                return "right";
+            case 1:
                 return "down";
-            } else {
-                if (dir == 2) {
-                    return "left";
-                } else {
-                    if (dir == 3) {
-                        return "up";
-                    }
-                }
-            }
+            case 2:
+                return "left";
+            case 3:
+                return "up";
+            default:
+                // Error.
+                return "right";
         }
-        return "right";
     }
 
 
@@ -53,14 +49,22 @@ public class RodarAccion extends Accion {
         String direccion = direccionToString(c.getP().getDireccion());
         c.getP().setSensor("Orientacion", angulo);
 
-        if (angulo == 0) {
-            direccion = direccionToString(c.getP().getDireccion());
-        } else if (angulo == 90) {
-            direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 1));
-        } else if (angulo == 180) {
-            direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 2));
-        } else if (angulo == 270) {
-            direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 3));
+        switch (angulo) {
+            case 0:
+                direccion = direccionToString(c.getP().getDireccion());
+                break;
+            case 90:
+                direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 1));
+                break;
+            case 180:
+                direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 2));
+                break;
+            case 270:
+                direccion = direccionToString(sumarSinPasarme(c.getP().getDireccion(), 3));
+                break;
+            default:
+                // Error.
+                break;
         }
         for (int i = 0; i <= distancia() - 1; i++) {
             Movimiento temp = new Movimiento(direccion);

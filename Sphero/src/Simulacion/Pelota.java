@@ -12,7 +12,11 @@ public class Pelota extends Pieza {
     public Pelota() {
         Coordenada posicion = new Coordenada(0, 0);
         representacion = 'r';
+        // Valores para la direccion
         // 0 = right
+        // 1 = down
+        // 2 = left
+        // 3 = up
         //TODO: crear constantes para la direccion
         direccion = 0;
         this.sensores = new HashMap<String, Integer>();
@@ -80,6 +84,4 @@ public class Pelota extends Pieza {
     public char dibujar() {
         return representacion;
     }
-
-
 }

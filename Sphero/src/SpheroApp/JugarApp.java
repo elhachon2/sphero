@@ -16,7 +16,7 @@ public class JugarApp {
         Display d = new Display(t);
         Controlador c = new Controlador(t, p, d);
         c.posicionarPelota(1, 1);
-        RodarApp r = new RodarApp(90, 4, 2);
+        RodarAccionApp r = new RodarAccionApp(90, 4, 2);
         CondicionalConElseApp cond = new CondicionalConElseApp("Orientacion", "===", 180, new LuzApp(0, 0, 255), new LuzApp(0, 255, 0));
         AccionCompuestaApp comp = new AccionCompuestaApp();
         comp.agregarAcciones(r);

@@ -1,7 +1,5 @@
 package Simulacion;
 
-import java.util.Observer;
-
 //En el metodo principal no llamar a movimiento simple porque no tiene los datos para actualizar la orientacion. Utilizar
 //la accion rodar para mover la pelota.
 
@@ -14,17 +12,19 @@ public class Movimiento extends Accion {
     }
 
     public int direccionToInteger(String dir) {
-        // TODO: pasar a un case
-        if (dir == "right") {
-            return 0;
-        } else if (dir == "down") {
-            return 1;
-        } else if (dir == "left") {
-            return 2;
-        } else if (dir == "up") {
-            return 3;
+        switch (dir) {
+            case "right":
+                return 0;
+            case "down":
+                return 1;
+            case "left":
+                return 2;
+            case "up":
+                return 3;
+            default:
+                // Error.
+                return 0;
         }
-        return 0;
     }
 
     public boolean ejecutarMovimiento(int x, int y, int destinox, int destinoy, Controlador c) {
