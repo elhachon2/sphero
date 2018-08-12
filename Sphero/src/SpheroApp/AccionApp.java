@@ -6,4 +6,5 @@ public abstract class AccionApp {
 
     public abstract Accion convertirEnAcciones();
     public abstract String toSpheroApp();
+    public abstract String toString();
 }

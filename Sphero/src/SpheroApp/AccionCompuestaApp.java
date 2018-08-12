@@ -33,4 +33,9 @@ public class AccionCompuestaApp extends AccionApp {
         }
         return codigo;
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

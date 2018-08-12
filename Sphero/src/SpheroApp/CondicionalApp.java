@@ -51,4 +51,9 @@ public class CondicionalApp extends AccionApp {
     public String toSpheroApp() {
         return "if (" + this.atributoToSphero() + " " + this.comparacion + " " + this.valor + ") {" + this.accion.toSpheroApp() + " }";
     }
+
+    @Override
+    public String toString() {
+        return "If ("+atributo+" "+comparacion+" "+valor+") {"+accion.toString()+" }";
+    }
 }

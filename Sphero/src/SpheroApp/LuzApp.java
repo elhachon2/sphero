@@ -21,4 +21,9 @@ public class LuzApp extends AccionApp {
     public String toSpheroApp() {
         return "setMainLed({ r: " + r + ", g: " + g + ", b: " + b + " });";
     }
+
+    @Override
+    public String toString() {
+        return "Luz("+r+", "+g+", "+b+")";
+    }
 }

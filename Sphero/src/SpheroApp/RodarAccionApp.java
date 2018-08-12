@@ -21,4 +21,9 @@ public class RodarAccionApp extends AccionApp {
     public String toSpheroApp() {
         return "await roll(" + angulo + "," + rapidez + "," + duracion + ");";
     }
+
+    @Override
+    public String toString() {
+        return "Rodar("+angulo+", "+rapidez+", "+duracion+")";
+    }
 }

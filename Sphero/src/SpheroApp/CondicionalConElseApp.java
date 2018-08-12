@@ -20,4 +20,11 @@ public class CondicionalConElseApp extends CondicionalApp {
     public String toSpheroApp() {
         return super.toSpheroApp() + " else { " + this.accionElseApp.toSpheroApp() + " }";
     }
+
+    @Override
+    public String toString() {
+        return "If ("+atributo+" "+comparacion+" "+valor+") {"+accion.toString()+" }else {"+accionElseApp.toString()+" }";
+    }
 }
+
+
