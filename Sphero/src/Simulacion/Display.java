@@ -11,6 +11,9 @@ public class Display implements Observer {
         this.tablero = t;
     }
 
+    public Tablero getTablero(){
+        return this.tablero;
+    }
     public void mostrarTablero() {
         String linea = "";
         for (int i = 0; i <= 9; i++) {

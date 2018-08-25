@@ -1,5 +1,6 @@
 package Interfaz;
 
+import Simulacion.*;
 import SpheroApp.*;
 
 import javax.swing.*;
@@ -31,6 +32,9 @@ public class SpheroMili {
     private JComboBox<AccionApp> accionesIf;
     private JComboBox<AccionApp> accionesElse;
     private JComboBox atributoelse;
+    private JTextField tablero1;
+    private JButton ejecutar;
+    private JTextArea tablero;
     private Vector<AccionApp> vectorDeAcciones;
 
     public void ActualizarComboBox() {
@@ -80,7 +84,7 @@ public class SpheroMili {
                 String temp2 = comparacion.getSelectedItem().toString();
                 int temp3 = Integer.parseInt(valor.getText());
                 AccionApp temp4 = (AccionApp) listAcciones.getSelectedItem();
-                vectorDeAcciones.add(new CondicionalApp(temp,temp2,temp3,temp4));
+                vectorDeAcciones.add(new CondicionalApp(temp, temp2, temp3, temp4));
                 ActualizarComboBox();
             }
         });
@@ -94,8 +98,25 @@ public class SpheroMili {
                 int temp3 = Integer.parseInt(valor2.getText());
                 AccionApp temp4 = (AccionApp) accionesIf.getSelectedItem();
                 AccionApp temp5 = (AccionApp) accionesElse.getSelectedItem();
-                vectorDeAcciones.add(new CondicionalConElseApp(temp,temp2,temp3,temp4,temp5));
+                vectorDeAcciones.add(new CondicionalConElseApp(temp, temp2, temp3, temp4, temp5));
                 ActualizarComboBox();
+            }
+        });
+
+        ejecutar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tablero.setText("");
+                Tablero t = new Tablero();
+                Pelota p = new Pelota();
+                DisplayPorPantalla d = new DisplayPorPantalla(t,tablero);
+                Controlador c = new Controlador(t, p, d);
+                c.posicionarPelota(1, 1);
+                AccionCompuestaApp comp = new AccionCompuestaApp();
+                for (AccionApp ac : vectorDeAcciones) {
+                    comp.agregarAcciones(ac);
+                }
+                JOptionPane.showMessageDialog(null, c.ejecutarAccion(comp.convertirEnAcciones()));
             }
         });
     }
@@ -111,6 +132,5 @@ public class SpheroMili {
     private void createUIComponents() {
         // TODO: place custom component creation code here
         listAcciones = new JComboBox<AccionApp>();
-
     }
 }
